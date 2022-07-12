@@ -1,0 +1,10 @@
+import urllib.request as ur
+import json
+
+data = ur.urlopen('https://api.atlasacademy.io/export/JP/nice_item_lang_en.json')
+json_data = json.loads(data.read())
+
+for dict in json_data:
+    #print(type(dict))
+    if 'skill' in dict['uses'] or 'ascension' in dict['uses']:
+        ur.urlretrieve(dict['icon'], dict['name']+ '.png')
