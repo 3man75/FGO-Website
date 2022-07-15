@@ -24,9 +24,6 @@ def create_app():
 @app.route('/favorite servant')
 def favServant():
 
-     c.commit() 
-
-     
      return render_template('servant.html')
 
 
@@ -34,18 +31,15 @@ def favServant():
 @app.route('/all')
 def naServants():
      
-     return render_template('json.html')
+     return render_template('servant.html')
 
 if __name__ == '__main__':
 
     
 
-    #reate_app()
+    #create_app()
 
-    PORT = os.getenv('PORT', 2000)
-    app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.jinja_env.auto_reload = True
 
-    app.run(host="0.0.0.0", debug=True, port = PORT)  #port=PORT
+    app.run(host="0.0.0.0", debug=True)
 
     #checking for push

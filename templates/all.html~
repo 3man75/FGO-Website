@@ -2,7 +2,7 @@
 <html>
   <head>
 
-    <title>Ereshkigal is my Favorite Servant!</title>
+    <title>All of the Servants in Fate Grand Order!</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='eresh.css') }}"/>
     <style>

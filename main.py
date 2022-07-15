@@ -31,7 +31,7 @@ def favServant():
 @app.route('/all')
 def naServants():
      
-     return render_template('servant.html')
+     return render_template('all.html')
 
 if __name__ == '__main__':
 
@@ -40,8 +40,6 @@ if __name__ == '__main__':
     #create_app()
 
     #PORT = os.getenv('PORT', 2000)
-    app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.jinja_env.auto_reload = True
 
     app.run(host="0.0.0.0", debug=True)
 
