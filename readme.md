@@ -1,6 +1,17 @@
-This is a Flask application to create a website for the hit Mobile game Fate Grand Order.
+This is a small Flask application to create a website for the hit Mobile game Fate Grand Order.
 
 
-Fate Grand Order is a Mobile Game that allows us to explore historical figures in a fantasy word and one that
-is played by millions of people internatinally.
+## Generating requirements:
 
+from inside the virtualenvironment, 
+
+```
+pip freeze > requirements.txt
+```
+
+## building the docker container
+```
+docker build -t <yourname>/dog-website .
+
+docker push <yourname>/dog-website
+```

@@ -20,7 +20,7 @@ def create_app():
      return render_template('index.html')
 
 
-#Shows Ereshkigal who is my favorite servant in the game.
+#Shows one particular servant who is my favorite
 @app.route('/favorite servant')
 def favServant():
 
@@ -31,7 +31,7 @@ def favServant():
 @app.route('/all')
 def naServants():
      
-     return render_template('all.html')
+     return render_template('json.html')
 
 if __name__ == '__main__':
 
@@ -39,8 +39,8 @@ if __name__ == '__main__':
 
     #create_app()
 
-    #PORT = os.getenv('PORT', 2000)
+    PORT = os.getenv('PORT', 2000)
 
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", debug=True, port = PORT)  #port=PORT
 
     #checking for push

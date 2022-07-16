@@ -22,15 +22,6 @@
       Favorite servant
     </h1>
 
-    <ul>
-      
-      <li><A HREF="https://fateg.herokuapp.com/"> Home </A></li>
-
-      <li><A HREF="https://fateg.herokuapp.com/favorite servant"> My favorite servant! </A></li>
-
-      <li><A HREF="https://fateg.herokuapp.com/all"> All Fate Grand Order Servants </A></li>
-
-    </ul>
     
 
   </body>
